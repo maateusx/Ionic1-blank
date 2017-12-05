@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ionic Blank</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="views/home/home.css" rel="stylesheet">
+
+    <!-- JS IMPORT -->
+    <script src="lib/ionic/js/jquery-3.1.1.js"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="views/app.js"></script>
+    <script src="lib/services.js"></script>
+
+    <!-- Controllers -->
+    <script src="views/home/home.controller.js"></script>
+
+  </head>
+
+  <body ng-app="starter">
+
+    <ion-side-menus enable-menu-with-back-views="false">
+
+      <!-- Content -->
+      <ion-side-menu-content drag-content="false" enable-menu-with-back-views="false">
+        <ion-nav-bar class="bar-stable">
+          <ion-nav-back-button>
+          </ion-nav-back-button>
+        </ion-nav-bar>
+
+        <ion-nav-view animation="slide-left-right"></ion-nav-view>
+      </ion-side-menu-content>
+
+      <!-- Right menu -->
+      <ion-side-menu side="left">
+
+        <div class="sidebar_content">
+          <div class="w100" align="center" menu-close>
+            <h4 style="color: #fff">Ionic Blank</h4>
+          </div>
+
+          <ul class="w100" style="margin-top: 15px;">
+            <li ng-repeat="sidebarContent in sidebarContents" ng-click="sidebarClick($index)" class="sidebar_li-size row" menu-close="">
+              <div style="width: 20%" align="center">
+               <i class="sidebar_li-icon icon {{sidebarContent.icon}}"></i>
+              </div>
+              <div class="sidebar_li-content">
+                <b class="sidebar_li-text">{{sidebarContent.title}}</b>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </ion-side-menu>
+    </ion-side-menus>
+
+  </body>
+</html>

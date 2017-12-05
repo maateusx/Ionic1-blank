@@ -1,0 +1,59 @@
+.w100 {
+	width: 100%;
+}
+
+.h100 {
+	height: 100%;
+}
+
+.hw100 {
+	height: 100%;
+	width: 100%;
+}
+
+.ion-content{
+	background-color: #EFEFF4 !important;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+/* --- SIDEBAR --- */
+.sidebar_li-size {
+  color: #fff;
+  height: 55px;
+  width: 100%;
+}
+
+.sidebar_li-icon {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.sidebar_li-content {
+  width: 80%;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 20px;
+}
+
+.sidebar_li-text {
+  line-height: 45px;
+}
+
+.sidebar_img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+.sidebar_content {
+  padding-top: 38px;
+  min-height: 100%;
+  width: 100%;
+  background: #0D5787; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0D5787, #00D2BC); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0D5787, #00D2BC); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0D5787, #00D2BC); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0D5787, #00D2BC); /* Standard syntax */
+}
+/* --- END SIDEBAR --- */
